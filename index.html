@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b2540">
+<title>夜を越えたら · 试听</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;background:radial-gradient(circle at 75% 15%,#43587c 0,#26314e 32%,#141b30 74%);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;color:#fff;padding:24px}.card{width:min(100%,480px);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.17);border-radius:26px;padding:32px 26px;box-shadow:0 20px 70px #080c1c88;text-align:center}.moon{width:100px;height:100px;margin:0 auto 28px;border-radius:50%;background:#e6dbc2;box-shadow:0 0 55px #e6dbc299}.eyebrow{font-size:12px;letter-spacing:.2em;color:#c4cde4}h1{font-size:31px;line-height:1.3;letter-spacing:.08em;margin:12px 0}p{color:#d5dcee;line-height:1.7}button{appearance:none;border:0;border-radius:999px;background:#f0d6ba;color:#232035;font-size:18px;font-weight:700;padding:16px 36px;min-width:185px;margin:24px auto 18px;cursor:pointer}audio{width:100%;margin:10px 0 20px}small{display:block;color:#b7c0d7;line-height:1.6}a{color:#f0d6ba}
+</style>
+</head>
+<body><main class="card"><div class="moon" aria-hidden="true"></div><div class="eyebrow">ORIGINAL JAPANESE SONG · DEMO</div><h1>夜を越えたら</h1><p>雨がやんだら、私も歩いてゆく。</p><button id="play" type="button">▶ 点击播放</button><audio id="audio" controls playsinline preload="metadata"><source src="song.mp3" type="audio/mpeg">你的浏览器不支持音频播放。</audio><small>ACE-Step 试听版 · 约 2 分 34 秒<br>若应用内浏览器无法播放，请用 Safari 或 Chrome 打开此网页。</small></main><script>const a=document.getElementById('audio'),b=document.getElementById('play');b.onclick=async()=>{try{if(a.paused){await a.play();b.textContent='❚❚ 暂停'}else{a.pause();b.textContent='▶ 点击播放'}}catch(e){b.textContent='请点击下方播放器'}};a.onended=()=>b.textContent='▶ 再听一次';</script></body></html>
